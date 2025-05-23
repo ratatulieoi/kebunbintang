@@ -1,0 +1,47 @@
+<%- include ('../../partials/header') %>
+    <div class="container mt-4">
+        <h1><%= title %></h1>
+        <div class="container">
+            <a href="/master/objek/tambah" class="btn btn-primary mb-3">Tambah Objek</a>
+        </div>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nama</th>
+                    <th>Kategori</th>
+                    <th>Image</th>
+                    <th>Aksi</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% if(objeks && objeks.length > 0) { %>
+                    <% objeks.forEach(function(item){ %>
+                        <tr>
+                            <td><%= item.id %></td>
+                            <td><%= item.nama_objek %></td>
+                            <td><%= item.nama_kategori %></td>
+                            <td>
+                                <% if(item.image) { %>
+                                    <img src="/images/<%= item.image %>" alt="<%= item.nama_objek %>" style="width: 50px; height: auto;">
+                                <% } else { %>
+                                    No Image
+                                <% } %>
+                            </td>
+                            <td>
+                                <a href="/master/objek/edit/<%= item.id %>" class="btn btn-sm btn-warning">Edit</a>
+                                <a href="/master/objek/hapus/<%= item.id %>" class="btn btn-sm btn-danger" 
+                                   onclick="return confirm('Yakin ingin menghapus objek ini?')">Hapus</a>
+                            </td>
+                        </tr>
+                    <% }); %>
+                <% } else { %>
+                    <tr>
+                        <td colspan="5" class="text-center">Tidak ada data objek</td>
+                    </tr>
+                <% } %>
+            </tbody>
+        </table>
+    </div>
+
+<%- include ('../../partials/footer') %>

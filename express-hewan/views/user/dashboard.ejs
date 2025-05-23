@@ -1,0 +1,45 @@
+<%- include('../partials/header_user') %>
+
+<style>
+    .dashboard-container {
+        padding: 2rem;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .welcome-section {
+        background: linear-gradient(to right, #4a90e2, #63b3ed);
+        color: white;
+        padding: 2rem;
+        border-radius: 15px;
+        margin-bottom: 2rem;
+    }
+
+    .stats-card {
+        background: white;
+        border-radius: 10px;
+        padding: 1.5rem;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        margin-bottom: 1rem;
+    }
+</style>
+
+<div class="dashboard-container">
+    <div class="welcome-section">
+        <h1>Selamat Datang, <%= user.username %>!</h1>
+        <p>Ini adalah halaman dashboard khusus pengguna.</p>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <div class="stats-card">
+                <h3>Profil Saya</h3>
+                <p>Username: <%= user.username %></p>
+                <p>Role: <%= user.role %></p>
+            </div>
+        </div>
+        <!-- Tambahkan card lain sesuai kebutuhan -->
+    </div>
+</div>
+
+<%- include('../partials/footer_user') %>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-4">
+        <h1><%= title %></h1>
+        
+        <% if(locals.error) { %>
+            <div class="alert alert-danger">
+                <%= error %>
+            </div>
+        <% } %>
+        
+        <form action="/master/objek/edit/<%= objek.id %>" method="POST" enctype="multipart/form-data">
+            <div class="mb-3">
+                <label for="nama_objek" class="form-label">Nama Objek</label>
+                <input type="text" 
+                       class="form-control" 
+                       id="nama_objek" 
+                       name="nama_objek" 
+                       value="<%= objek.nama_objek %>" 
+                       required>
+            </div>
+            
+            <div class="mb-3">
+                <label for="kategori_id" class="form-label">Kategori</label>
+                <select class="form-select" id="kategori_id" name="kategori_id" required>
+                    <option value="">Pilih Kategori</option>
+                    <% kategoris.forEach(function(kategori) { %>
+                        <option value="<%= kategori.id_kategori %>" 
+                                <%= kategori.id_kategori == objek.kategori_id ? 'selected' : '' %>>
+                            <%= kategori.nama %>
+                        </option>
+                    <% }); %>
+                </select>
+            </div>
+            
+            <div class="mb-3">
+                <label for="image" class="form-label">Gambar</label>
+                <input type="file" class="form-control" id="image" name="image">
+                <% if(objek.image) { %>
+                    <img src="/images/<%= objek.image %>" 
+                         alt="Current image" 
+                         style="max-width: 200px; margin-top: 10px;">
+                    <input type="hidden" name="old_image" value="<%= objek.image %>">
+                <% } %>
+            </div>
+            
+            <div class="mb-3">
+                <button type="submit" class="btn btn-primary">Update</button>
+                <a href="/master/objek" class="btn btn-secondary">Batal</a>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

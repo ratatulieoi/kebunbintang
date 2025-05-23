@@ -1,0 +1,99 @@
+{
+  "hewan": {
+    "1": {
+      "deskripsi": "Axolotl adalah hewan lucu yang hidup di air. Ia punya senyum lebar dan kepala seperti memakai mahkota kecil. Tubuhnya berwarna pink atau putih. Axolotl bisa tumbuh kembali bagian tubuhnya yang hilang. Ia berenang dengan ekor dan kakinya yang kecil."
+    },
+    "2": {
+      "deskripsi": "Kambing adalah hewan berkaki empat yang suka memanjat. Ia punya janggut kecil dan tanduk di kepalanya. Kambing berbunyi 'mbeeek'. Bulunya bisa berwarna putih, hitam, atau coklat. Kambing suka makan rumput dan daun-daunan. Anak-anak kambing sangat lucu dan suka melompat-lompat."
+    },
+    "3": {
+      "deskripsi": "Katak adalah hewan yang hidup di darat dan air. Kulitnya licin dan sedikit basah. Katak bertelur di air dan anaknya disebut berudu. Katak melompat dengan kaki belakangnya yang panjang. Mereka berbunyi 'krok-krok' dan suka makan serangga dengan lidahnya yang panjang."
+    },
+    "4": {
+      "deskripsi": "Salamander mirip seperti kadal kecil dengan kulit yang licin dan basah. Ia punya ekor panjang dan hidup di tempat yang lembab. Salamander bisa berwarna-warni seperti hitam dengan bintik kuning atau merah. Ia berjalan pelan-pelan dan suka bersembunyi di bawah batu atau daun."
+    },
+    "5": {
+      "deskripsi": "Pinguin adalah burung yang tidak bisa terbang tetapi sangat jago berenang. Tubuhnya hitam di bagian punggung dan putih di bagian perut. Pinguin berjalan lucu dengan kaki pendeknya. Mereka hidup di tempat yang sangat dingin dan makan ikan dari laut."
+    },
+    "6": {
+      "deskripsi": "Angsa adalah burung besar dengan leher panjang dan bulu yang indah. Mereka bisa berwarna putih atau abu-abu. Angsa sangat pandai berenang di danau atau sungai. Mereka berbunyi 'kook-kook'. Angsa menjaga anak-anaknya dengan baik dan selalu bersama keluarganya."
+    },
+    "7": {
+      "deskripsi": "Bebek adalah burung yang suka berenang. Mereka punya paruh lebar dan kaki berselaput untuk berenang. Bebek berbunyi 'kwek-kwek'. Anak bebek biasanya berwarna kuning dan sangat lucu. Bebek suka makan biji-bijian, rumput, dan serangga kecil di air."
+    },
+    "8": {
+      "deskripsi": "Merpati adalah burung yang cantik dan suka hidup berkelompok. Mereka punya bulu halus berwarna abu-abu, putih, atau coklat. Merpati sangat pandai terbang dan kembali ke rumahnya. Mereka berbunyi 'kurr-kurr'. Merpati membuat sarang dari ranting-ranting kecil dan merawat anaknya dengan penuh kasih sayang."
+    },
+    "9": {
+      "deskripsi": "Elang adalah burung besar yang sangat gagah. Ia punya mata tajam yang bisa melihat dari jarak jauh. Elang terbang tinggi di langit dengan sayapnya yang lebar. Mereka berburu tikus dan hewan kecil lainnya. Paruhnya kuat dan tajam untuk makan daging."
+    },
+    "10": {
+      "deskripsi": "Pelikan adalah burung besar dengan kantong di bawah paruhnya. Kantong ini digunakan untuk menangkap ikan. Pelikan bisa terbang tinggi dan berenang di air. Mereka punya sayap lebar berwarna putih atau abu-abu. Pelikan suka hidup bersama temannya di dekat air."
+    },
+    "11": {
+      "deskripsi": "Hiu adalah ikan besar yang hidup di laut. Ia punya sirip di punggungnya yang kadang terlihat di atas air. Giginya tajam dan terus tumbuh sepanjang hidupnya. Hiu bisa mencium bau makanan dari jarak jauh. Ada banyak jenis hiu dengan ukuran berbeda."
+    },
+    "12": {
+      "deskripsi": "Ikan Tuna adalah ikan laut yang bisa berenang sangat cepat. Tubuhnya seperti torpedo dengan sirip kecil di belakang. Warnanya biru gelap di atas dan silver di bawah. Tuna bisa tumbuh sangat besar dan kuat. Mereka berenang jauh mencari makanan di lautan."
+    },
+    "13": {
+      "deskripsi": "Piranha adalah ikan kecil yang hidup di sungai. Mereka punya gigi tajam dan suka hidup berkelompok. Piranha berwarna silver dengan perut merah atau orange. Mereka makan buah-buahan yang jatuh ke air dan kadang ikan kecil. Piranha berenang sangat cepat."
+    },
+    "14": {
+      "deskripsi": "Paus adalah hewan laut terbesar di dunia. Mereka bernapas dengan paru-paru, bukan insang seperti ikan. Paus punya lubang napas di atas kepalanya. Mereka sangat pintar dan suka bernyanyi di dalam air. Anak paus minum susu dari ibunya seperti kita."
+    },
+    "15": {
+      "deskripsi": "Komodo adalah kadal raksasa yang hidup di Indonesia. Tubuhnya besar dengan kaki kuat dan ekor panjang. Komodo punya lidah panjang berwarna kuning yang sering dijulurkan. Mereka bisa berlari cepat meskipun tubuhnya besar. Komodo makan daging dan mencari makan di siang hari."
+    },
+    "16": {
+      "deskripsi": "Ular adalah hewan yang tidak punya kaki dan bergerak dengan meliuk-liukkan tubuhnya. Kulitnya bersisik dan kadang berganti saat tumbuh. Ular punya lidah panjang untuk mencium bau. Mereka tidur dengan mata terbuka karena tidak punya kelopak mata. Ada banyak jenis ular dengan warna berbeda."
+    },
+    "17": {
+      "deskripsi": "Kura-kura adalah hewan yang punya rumah di punggungnya yang disebut tempurung. Mereka berjalan sangat lambat tapi bisa hidup sangat lama. Kura-kura makan sayuran dan bertelur di pasir. Mereka bisa menyembunyikan kepala dan kakinya ke dalam tempurung saat takut."
+    },
+    "18": {
+      "deskripsi": "Monyet adalah hewan lucu yang suka melompat dan bergelantungan di pohon. Mereka punya tangan, kaki, dan ekor yang panjang. Monyet sangat pintar dan bisa menggunakan alat sederhana. Mereka hidup berkelompok dan saling merawat. Monyet makan buah-buahan, biji, dan serangga."
+    },
+    "19": {
+      "deskripsi": "Kapibara adalah hewan pengerat terbesar di dunia. Ia terlihat seperti marmut raksasa dengan bulu coklat pendek. Kapibara sangat suka berenang dan hidup dekat air. Mereka sangat ramah dan sering tidur bergerombol. Kapibara makan tumbuhan dan rumput. Telinganya kecil dan mata serta hidungnya ada di atas kepala."
+    },
+    "20": {
+      "deskripsi": "Anjing adalah sahabat manusia yang setia. Mereka punya banyak jenis dengan bentuk dan ukuran berbeda. Anjing sangat pintar dan bisa diajari berbagai perintah. Mereka suka bermain dan dielus-elus. Anjing menggonggong untuk berbicara dan menggerak-gerakkan ekornya saat senang."
+    },
+    "21": {
+      "deskripsi": "Sapi adalah hewan besar yang hidup di peternakan. Tubuhnya besar dengan kaki kuat dan ekor panjang untuk mengusir lalat. Sapi berbunyi 'moooo'. Mereka makan rumput sepanjang hari. Sapi betina memberi kita susu yang enak dan bergizi. Bulunya bisa berwarna hitam, putih, atau coklat."
+    },
+    "22": {
+      "deskripsi": "Buaya adalah reptil besar yang hidup di air dan darat. Tubuhnya panjang dengan sisik keras dan ekor yang kuat untuk berenang. Buaya punya rahang kuat dengan gigi tajam. Mereka suka berjemur di tepi sungai atau danau. Bayi buaya menetas dari telur dan dijaga oleh induknya."
+    },
+    "23": {
+      "deskripsi": "Bunglon adalah kadal unik yang bisa mengubah warna kulitnya. Matanya bisa bergerak terpisah dan lidahnya sangat panjang untuk menangkap serangga. Bunglon berjalan pelan di pohon dengan kaki khususnya. Ekornya bisa melingkar untuk berpegangan di dahan."
+    },
+    "24": {
+      "deskripsi": "Iguana adalah reptil hijau yang suka berjemur di batu atau pohon. Mereka punya sisir di punggung dan ekor panjang untuk keseimbangan. Iguana sangat pandai memanjat dan berenang. Mereka makan daun-daunan dan buah. Iguana muda berwarna lebih terang dari yang dewasa."
+    },
+    "25": {
+      "deskripsi": "Lele adalah ikan air tawar dengan kumis panjang di sekitar mulutnya. Kulitnya licin dan tidak bersisik. Lele bisa bertahan hidup di air yang keruh dan sedikit oksigen. Mereka aktif di malam hari mencari makan. Kumisnya digunakan untuk merasakan makanan di air keruh."
+    },
+    "26": {
+      "deskripsi": "Gajah adalah hewan darat terbesar dengan belalai panjang yang sangat berguna. Mereka punya telinga besar untuk mendinginkan tubuh dan gading dari gigi yang tumbuh panjang. Gajah sangat pintar dan punya ingatan yang kuat. Mereka hidup dalam kelompok yang dipimpin gajah betina tertua."
+    }
+  },
+  "kategori": {
+    "1": {
+      "deskripsi": "Hewan yang hidup di air dan darat. Mereka bisa bernafas dengan insang saat di air dan paru-paru saat di darat. Contohnya seperti katak dan salamander."
+    },
+    "2": {
+      "deskripsi": "Hewan berkaki dua yang memiliki bulu dan sayap. Mereka bisa terbang di udara dan membuat sarang. Beberapa jenis burung juga pandai berenang di air."
+    },
+    "3": {
+      "deskripsi": "Hewan yang hidup di air dan memiliki sirip untuk berenang. Mereka bernafas dengan insang dan berenang dengan sangat lincah di dalam air."
+    },
+    "4": {
+      "deskripsi": "Hewan melata yang memiliki kulit bersisik. Mereka merayap atau berjalan di tanah dan suka berjemur di bawah sinar matahari."
+    },
+    "5": {
+      "deskripsi": "Hewan yang melahirkan dan menyusui anaknya. Mereka memiliki rambut atau bulu di tubuhnya dan merawat anak-anaknya dengan penuh kasih sayang."
+    }
+  }
+}

@@ -1,0 +1,140 @@
+
+
+<%- include ('partials/header') %>
+
+<style>
+    .masonry-container {
+        columns: 4;
+        gap: 1rem;
+        margin: 1rem;
+    }
+
+    .card {
+        margin-bottom: 1rem;
+        border-radius: 20px;
+        overflow: hidden;
+        cursor: pointer;
+    }
+        .card-img-top {
+        object-fit: cover;
+    }
+
+    .filter-section {
+        padding: 1rem 2rem;
+        background: #f8f9fa;
+        margin-bottom: 1rem;
+    }
+        .card-overlay{
+        position: absolute;
+        bottom: -100%;
+        left: 0;
+        right: 0;
+        color: white;
+        padding: 15px;
+        transition: bottom 0.3s ease-in-out;
+    }
+
+    .card:hover .card-overlay {
+        bottom: 0;
+    }
+        .kategorimunculjir {
+        position: absolute;
+        top: 15px;
+        right: -100%;
+        transition: right 0.3s ease-in-out;
+        color: white;
+    }
+
+    .card:hover .kategorimunculjir {
+        right: 15px;
+    }
+        .card::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .card:hover::after {
+        opacity: 1;
+    }
+    .card-overlay,
+    .kategorimunculjir {
+        z-index: 1;
+    }
+        .card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+    }
+        .card:hover img {
+        transform: scale(1.1);
+    }
+    
+</style>
+
+<div>
+    <!-- Filter Section -->
+    <div class="filter-section">
+        <div class="row">
+            <div class="col-md-6">
+                <select class="form-select" id="kategoriFilter">
+                    <option value="">Semua Kategori</option>
+                    <% kategoris.forEach(function(kategori) { %>
+                        <option value="<%= kategori.id_kategori %>"><%= kategori.nama %></option>
+                    <% }); %>
+                </select>
+            </div>
+            <div class="col-md-6">
+                <input type="text" class="form-control" id="searchInput" placeholder="Cari hewan...">
+            </div>
+        </div>
+    </div>
+
+<div class="masonry-container">
+    <% objeks.forEach(function(objek) { %>
+        <a href="detail/<%= objek.id %>" class="card" data-kategori="<%= objek.kategori_id %>" data-nama="<%= objek.nama_objek %>">
+            <div class="position-relative">
+                <img src="/images/<%= objek.image %>" class="card-img-top" alt="<%= objek.nama_objek %>">
+                <div class="card-overlay">
+                    <h2 class="card-title"><%= objek.nama_objek %></h2>
+                </div>
+                <div class="kategorimunculjir">
+                    <%= objek.nama_kategori     %>
+                </div>
+            </div>
+        </a>
+    <% }); %>
+</div>
+
+<script>
+    const kategoriFilter = document.getElementById('kategoriFilter');
+    const searchInput = document.getElementById('searchInput');
+    const cards = document.querySelectorAll('.card');
+
+    function filterCards() {
+        const kategoriValue = kategoriFilter.value;
+        const searchValue = searchInput.value.toLowerCase();
+
+        cards.forEach(card => {
+            const kategoriId = card.getAttribute('data-kategori');
+            const nama = card.getAttribute('data-nama').toLowerCase();
+            
+            const matchKategori = !kategoriValue || kategoriId === kategoriValue;
+            const matchSearch = nama.includes(searchValue);
+            
+            card.style.display = (matchKategori && matchSearch) ? 'block' : 'none';
+        });
+    }
+
+    kategoriFilter.addEventListener('change', filterCards);
+    searchInput.addEventListener('input', filterCards);
+</script>
+
+<%- include ('partials/footer') %>

@@ -1,0 +1,38 @@
+   
+    <%- include('../../partials/header') %>
+    <div class="container mt-4">
+        <h1><%= title %></h1>
+        <a href="/master/kategori/tambah" class="btn btn-primary mb-3">Tambah Kategori Baru</a>
+        
+        <div class="table-container">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th style="width: 10%">ID</th>
+                        <th style="width: 60%">Nama Kategori</th>
+                        <th style="width: 30%">Aksi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                   <% if(kategoris && kategoris.length > 0) { %>
+                    <% kategoris.forEach(function(kategori) { %>
+                        <tr>
+                            <td><%= kategori.id_kategori %></td>
+                            <td><%= kategori.nama %></td> <!-- Perubahan: menggunakan nama -->
+                            <td>
+                                <a href="/master/kategori/edit/<%= kategori.id_kategori %>" class="btn btn-sm btn-warning">Edit</a>
+                                <a href="/master/kategori/hapus/<%= kategori.id_kategori %>" class="btn btn-sm btn-danger" 
+                                   onclick="return confirm('Yakin ingin menghapus kategori ini?')">Hapus</a>
+                            </td>
+                        </tr>
+                    <% }); %>
+                <% } else { %>
+                    <tr>
+                        <td colspan="3" class="text-center">Tidak ada data kategori</td>
+                    </tr>
+                <% } %>
+                </tbody>
+            </table>
+        </div>
+    </div>
+<%- include ('../../partials/footer') %>

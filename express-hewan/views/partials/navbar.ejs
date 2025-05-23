@@ -1,0 +1,59 @@
+        <style>
+        .hero-section {
+            padding: 60px 0;
+            text-align: center;
+            background-color: white;
+            border-radius: 10px;
+            margin: 40px auto;
+            max-width: 800px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+        .btn-custom {
+            margin: 10px;
+            padding: 10px 30px;
+            font-size: 1.1em;
+            transition: transform 0.2s;
+        }
+        .btn-custom:hover {
+            transform: translateY(-3px);
+        }
+        .nav-custom {
+            background-color: #4a90e2;
+            padding: 15px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .nav-link {
+            color: white !important;
+            margin: 0 15px;
+        }
+        .nav-link:hover {
+            color: #f0f0f0 !important;
+        }
+    </style>
+<nav class="navbar navbar-expand-lg nav-custom">
+    <div class="container">
+        <a class="navbar-brand text-white" href="/">🐮</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="/master">ATMIN</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/master/kategori">Kategori</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/master/objek">Objek</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                        <a class="nav-link" href="/auth/logout">Logout</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
