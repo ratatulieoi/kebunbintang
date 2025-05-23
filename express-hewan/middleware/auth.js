@@ -9,9 +9,8 @@ function isAdmin(req, res, next) {
     if (req.session.user && req.session.user.role === 'admin') {
         return next();
     }
-    res.status(403).render('error', { 
-        message: 'KAMU BUKAN ADMIN BOY acumalaka😂',
-        error: { status: 403 }
+    res.status(403).render('error-403', { 
+        message: 'KAMU BUKAN ADMIN BOY acumalaka😂'
     });
 }
 
